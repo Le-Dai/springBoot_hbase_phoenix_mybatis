@@ -1,0 +1,2 @@
+# springBoot_hbase_phoenix_mybatis
+spring boot 使用mybatis连接phoenix使用hbase
