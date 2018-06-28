@@ -30,7 +30,25 @@ compile('org.springframework.boot:spring-boot-starter') {
          exclude(module: 'guava')
      }
      compile  ('com.google.guava:guava:16.0')
-```         
+```   
+```
+        <dependency>
+            <groupId>org.apache.phoenix</groupId>
+            <artifactId>phoenix-core</artifactId>
+            <version>4.13.1-HBase-1.2</version>
+            <exclusions>
+                <exclusion>
+                    <groupId>org.slf4j</groupId>
+                    <artifactId>slf4j-log4j12</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>log4j</groupId>
+                    <artifactId>log4j</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+```
+
 **注意guava包不能超过16.0,否则phoenix不能够使用，同时要解决去除phoenix的log4j依赖包时日志错误文件:** 
     
     org.apache.log4j下的文件加入Level    
