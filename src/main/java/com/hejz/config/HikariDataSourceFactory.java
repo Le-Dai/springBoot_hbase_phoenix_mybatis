@@ -1,4 +1,4 @@
-package com.lenovo.mds.config;
+package com.hejz.config;
 
 import com.zaxxer.hikari.HikariDataSource;
 import org.apache.ibatis.datasource.unpooled.UnpooledDataSourceFactory;

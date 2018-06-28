@@ -3,8 +3,8 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.lenovo.mds</groupId>
-    <artifactId>phoenix-mybatis</artifactId>
+    <groupId>com.hejz</groupId>
+    <artifactId>springBoot_hbase_phoenix_mybatis</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <packaging>jar</packaging>
 

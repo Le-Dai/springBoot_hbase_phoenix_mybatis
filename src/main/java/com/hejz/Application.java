@@ -1,12 +1,12 @@
-package com.lenovo.mds;
+package com.hejz;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class PhoenixMybatisApplication {
+public class Application {
 
     public static void main(String[] args) {
-        SpringApplication.run(PhoenixMybatisApplication.class, args);
+        SpringApplication.run(Application.class, args);
     }
 }

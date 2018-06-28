@@ -1,4 +1,4 @@
-package com.lenovo.mds.entity;
+package com.hejz.entity;
 
 /**
  * Created by jixin on 18-3-11.

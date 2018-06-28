@@ -1,4 +1,4 @@
-package com.lenovo.mds.config;
+package com.hejz.config;
 
 import org.apache.ibatis.session.SqlSessionFactory;
 import org.apache.ibatis.session.SqlSessionFactoryBuilder;

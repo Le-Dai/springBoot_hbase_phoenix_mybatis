@@ -1,6 +1,6 @@
-package com.lenovo.mds.dao;
+package com.hejz.dao;
 
-import com.lenovo.mds.entity.UserInfo;
+import com.hejz.entity.UserInfo;
 import org.apache.ibatis.annotations.*;
 
 import java.util.List;

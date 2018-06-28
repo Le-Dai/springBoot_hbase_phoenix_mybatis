@@ -1,7 +1,7 @@
-package com.lenovo.mds.controller;
+package com.hejz.controller;
 
-import com.lenovo.mds.dao.UserInfoMapper;
-import com.lenovo.mds.entity.UserInfo;
+import com.hejz.dao.UserInfoMapper;
+import com.hejz.entity.UserInfo;
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
 import org.springframework.beans.factory.annotation.Autowired;

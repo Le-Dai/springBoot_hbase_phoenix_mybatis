@@ -1,4 +1,4 @@
-package com.lenovo.mds.entity;
+package com.hejz.entity;
 
 public class Bj {
     private int userId;
