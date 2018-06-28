@@ -6,7 +6,7 @@ spring boot 使用mybatis连接phoenix使用hbase
     phoenix：4.13.1-HBase-1.2 （与hbase服务器phoenix版本一致）
     spring boot:2.0.2.RELEASE
 
-##注意：无法与swagger2集成
+##注意：无法与swagger2集成：swagger2的guava包不能低于18.0
 
 ##使用注意事项：
 
