@@ -1,4 +1,4 @@
-package com.hejz;
+package com.wxstc.bigdata;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

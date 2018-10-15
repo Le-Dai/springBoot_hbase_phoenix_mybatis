@@ -1,4 +1,4 @@
-package com.hejz.config;
+package com.wxstc.bigdata.config;
 
 import com.zaxxer.hikari.HikariDataSource;
 import org.apache.ibatis.datasource.unpooled.UnpooledDataSourceFactory;

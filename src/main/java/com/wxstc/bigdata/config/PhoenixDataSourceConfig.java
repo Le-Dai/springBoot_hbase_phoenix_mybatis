@@ -1,10 +1,11 @@
-package com.hejz.config;
+package com.wxstc.bigdata.config;
 
 import org.apache.ibatis.session.SqlSessionFactory;
 import org.apache.ibatis.session.SqlSessionFactoryBuilder;
 import org.mybatis.spring.SqlSessionFactoryBean;
 import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Primary;
@@ -17,16 +18,14 @@ import java.io.InputStream;
 import java.util.Properties;
 import java.util.Set;
 
-/**
- * Created by 何建哲 on 18-5-31.
- */
+
 @Configuration
 @MapperScan(basePackages = PhoenixDataSourceConfig.PACKAGE, sqlSessionFactoryRef = "PhoenixSqlSessionFactory")
 public class PhoenixDataSourceConfig {
-    static final String PACKAGE = "com.example.dao.**";
+    static final String PACKAGE = "com.wxstc.bigdata.phoenixdao.**";
 
     @Bean(name = "PhoenixDataSource")
-    @Primary
+//    @ConfigurationProperties(prefix = "spring.datasource.test1")
     public DataSource phoenixDataSource() throws IOException {
         ResourceLoader loader = new DefaultResourceLoader();
         InputStream inputStream = loader.getResource("classpath:application.properties")
@@ -35,6 +34,7 @@ public class PhoenixDataSourceConfig {
         properties.load(inputStream);
         Set<Object> keys = properties.keySet();
         Properties dsProperties = new Properties();
+
         for (Object key : keys) {
             if (key.toString().startsWith("datasource")) {
                 dsProperties.put(key.toString().replace("datasource.", ""), properties.get(key));
@@ -47,7 +47,6 @@ public class PhoenixDataSourceConfig {
     }
 
     @Bean(name = "PhoenixSqlSessionFactory")
-    @Primary
     public SqlSessionFactory phoenixSqlSessionFactory(
             @Qualifier("PhoenixDataSource") DataSource dataSource) throws Exception {
         SqlSessionFactoryBean factoryBean = new SqlSessionFactoryBean();
@@ -58,4 +57,5 @@ public class PhoenixDataSourceConfig {
         factoryBean.setSqlSessionFactoryBuilder(new SqlSessionFactoryBuilder());
         return factoryBean.getObject();
     }
+
 }

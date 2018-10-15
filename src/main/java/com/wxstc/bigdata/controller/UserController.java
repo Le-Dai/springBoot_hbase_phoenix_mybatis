@@ -1,7 +1,7 @@
-package com.hejz.controller;
+package com.wxstc.bigdata.controller;
 
-import com.hejz.dao.UserInfoMapper;
-import com.hejz.entity.UserInfo;
+import com.wxstc.bigdata.phoenixdao.UserInfoMapper;
+import com.wxstc.bigdata.entity.UserInfo;
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
 import org.springframework.beans.factory.annotation.Autowired;

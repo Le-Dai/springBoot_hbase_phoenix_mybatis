@@ -1,0 +1,11 @@
+#spring:
+#  datasource:
+#    url: jdbc:mysql://47.94.196.195:3306/bigdata?useUnicode=true&characterEncoding=UTF-8
+##    url: jdbc:mysql://localhost:3306/superclass?useUnicode=true&characterEncoding=UTF-8
+#    username: root
+#    password: dl575153
+##    password: root
+#    driver-class-name: com.mysql.jdbc.Driver
+##    type: com.alibaba.druid.pool.DruidDataSource
+#    type: com.mysql.jdbc.jdbc2.optional.MysqlDataSource
+#    connectionProperties: druid.stat.mergeSql=true

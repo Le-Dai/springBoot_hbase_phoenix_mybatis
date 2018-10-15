@@ -1,6 +1,6 @@
-package com.hejz.dao;
+package com.wxstc.bigdata.phoenixdao;
 
-import com.hejz.entity.UserInfo;
+import com.wxstc.bigdata.entity.UserInfo;
 import org.apache.ibatis.annotations.*;
 
 import java.util.List;

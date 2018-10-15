@@ -1,4 +1,4 @@
-package com.hejz.entity;
+package com.wxstc.bigdata.entity;
 
 /**
  * Created by jixin on 18-3-11.

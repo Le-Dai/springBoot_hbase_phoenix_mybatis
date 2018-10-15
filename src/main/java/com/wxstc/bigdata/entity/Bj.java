@@ -1,4 +1,4 @@
-package com.hejz.entity;
+package com.wxstc.bigdata.entity;
 
 public class Bj {
     private int userId;
